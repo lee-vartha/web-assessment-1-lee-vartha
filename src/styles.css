@@ -47,22 +47,23 @@ header.top-header nav:nth-child(1) {
 
 header.top-header nav:nth-child(2) {
   /* Move the second navigation link to the right */
-  margin-right: -60px;
+  margin-right: -90px;
   margin-left: -10px;
   margin-top: -7px;
 }
 
 header.top-header nav:nth-child(3) {
   /* Move the third navigation link to the right */
-  margin-right: -30px;
+  margin-right: -10px;
+  margin-left: 60px;
   margin-top: -10px;
   /* size change */
-  width: 10px;
 }
 
 header.top-header nav:nth-child(4) {
   /* Move the fourth navigation link to the right */
-  margin-right: 20px;
+  margin-right: 30px;
+  margin-left: -10px;
   margin-top: -12px;
 }
 
@@ -112,6 +113,7 @@ header.left-header nav img {
 
 .sign-up {
   margin-top: 2px; /* Adjust the margin-top for the "Sign Up" button */
+  margin-left: 10px;
 }
 
 
