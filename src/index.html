@@ -10,6 +10,10 @@
 
 <body>
   
+  <audio id="backgroundMusic" autoplay loop volume="0.3">
+    <source src="path/to/your-background-music.mp3" type="audio/mpeg">
+  </audio>
+    
   <!-- the left header information - all the buttons etc. -->
   <header class="left-header">
     <nav>
@@ -31,30 +35,26 @@
       </div>
   </header>
 
-  <!-- the left header information - all the buttons etc. -->
-  <header class="top-header">
-    <nav>
-      <li><a href="#poet-page" onclick="showContent('poetry-page')"><img src="poetry.png" alt="Poetry"></a></li>
-    </nav>
-    <nav>
-      <li><a href="#music-page" onclick="showContent('music-page')"><img src="music.png" alt="Music"></a></li>
-    </nav>
-    <nav>
-      <li><a href="#art-page" onclick="showContent('art-page')"><img src="artist.png" alt="Art"></a></li>
-    </nav>
-    <nav>
-      <li><a href="#pic-page" onclick="showContent('pic-page')"><img src="picture.png" alt="Pic"></a></li>
-    </nav>
-  </header>
-
-
-
-  <audio id="backgroundMusic" autoplay loop volume="0.3">
-    <source src="path/to/your-background-music.mp3" type="audio/mpeg">
-  </audio>
+      <!-- the left header information - all the buttons etc. -->
+      <header class="top-header">
+        <nav>
+          <li><a href="#poet-page" onclick="showContent('poetry-page')"><img src="poetry.png" alt="Poetry"></a></li>
+        </nav>
+        <nav> 
+          <li><a href="#music-page" onclick="showContent('music-page')"><img src="music.png" alt="Music"></a></li>
+        </nav>
+        <nav>
+          <li><a href="#art-page" onclick="showContent('art-page')"><img src="artist.png" alt="Art"></a></li>
+        </nav>
+        <nav>
+          <li><a href="#pic-page" onclick="showContent('pic-page')"><img src="picture.png" alt="Pic"></a></li>
+        </nav>
+      </header>
+  
 
   <main>
-    <section id="artist">
+
+    <section id="art-page">
       <div class="container">
         <img src="buttonstring.png" alt="image" class="image-medium2">
         <img src="artist.png" alt="image" class="image-small">
@@ -75,30 +75,29 @@
         <img src="des.png" alt="image" class="image-smaller">
         <img src="des.png" alt="image" class="image-smaller2">
       </div>
+      <div class="card-container">
+        <div class="card">
+          <!-- Your first tarot card image here -->
+          <img src="moontarot.jpg" alt="Tarot Card 1">
+        </div>
+        <div class="card">
+          <!-- Your second tarot card image here -->
+          <img src="deathtarot.jpg" alt="Tarot Card 2">
+        </div>
+        <div class="card">
+          <!-- Your third tarot card image here -->
+          <img src="suntarot.jpg" alt="Tarot Card 3">
+        </div>
+      </div>
     </section>
 
     <section id="about-me">
       <div class="container">
         <img src="buttonstring.png" alt="image" class="image-medium">
         <img src="titling.png" alt="image" class="image-small">
-        <div class="card-container">
-          <div class="card">
-            <!-- Your first tarot card image here -->
-            <img src="moontarot.jpg" alt="Tarot Card 1">
-          </div>
-          <div class="card">
-            <!-- Your second tarot card image here -->
-            <img src="deathtarot.jpg" alt="Tarot Card 2">
-          </div>
-          <div class="card">
-            <!-- Your third tarot card image here -->
-            <img src="suntarot.jpg" alt="Tarot Card 3">
-          </div>
-        </div>
+
       </div>
     </section>
-    
-    
 
     <section id="explore-page">
       <div class="container"> 

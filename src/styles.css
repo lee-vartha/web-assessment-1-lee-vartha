@@ -6,7 +6,7 @@ body {
     background-size: 1745px;
   }
   
-  
+  /* this is for the entire header */
   .top-header {
     position: fixed;
     top: 0;
@@ -16,7 +16,7 @@ body {
     background-image: url("header.png");
     background-size: 100%; /* Adjust this value to control how the background image is displayed */
     background-repeat: no-repeat;
-    color: #d9c3b000;
+    color: #00000000;
     padding: 5px;
     margin-top: px;
     margin-left: 200px;
@@ -76,28 +76,21 @@ header.left-header {
   background-image: url("side.png");
   background-size: 100%; /* Adjust this value to control how the background image is displayed */
   color: #33333300; /* Set your desired text color */
-  padding: 0px 0px;
-  z-index: 11; /* Set a higher z-index than the main header to overlay it */
+  padding: 0;
+  z-index: 11; /* Set a higher z-index to make it appear above the top header */
   display: flex; /* Use Flexbox to arrange items vertically */
   flex-direction: column; /* Arrange items vertically */
   align-items: center; /* Center items horizontally within the header */
-}
-
-/* Styles for the navigation links (buttons) in the left header */
-header.left-header nav {
-  margin-bottom: -250px; /* Adjust the spacing between each button (nav element) */
-}
-
-header.left-header li {
-  margin-bottom: 0px;
+  justify-content: flex-end;
 }
 
 header.left-header a {
   display: block; /* Make the links (buttons) fill the entire width of the nav element */
   text-decoration: none;
   color: #333; /* Set your desired link color */
-  padding: 0px;
-  margin-top: 130px;
+  padding: 0;
+  margin-top: -15px; /* Adjust margin-top to position the buttons */
+  margin-bottom: -25px; /* Adjust margin-bottom to create closer spacing */
 }
 
 /* Represents the button images in the left header */
@@ -106,17 +99,21 @@ header.left-header nav img {
   height: auto; /* Maintain the aspect ratio */
 }
 
-.container {
+/* Reduce the spacing between the image buttons */
+header.left-header nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  margin-left: 18px;
+}
+
+header.left-header nav img {
+  margin: 2px; /* Adjust the margin to create smaller spacing between the images */
 }
 
 .sign-up {
-margin-top: 30px;
+  margin-top: 2px; /* Adjust the margin-top for the "Sign Up" button */
 }
+
 
   .container {
     display: flex;
