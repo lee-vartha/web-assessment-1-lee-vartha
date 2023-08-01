@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Crow's Nest</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="questionButton.png" sizes="120x120" type="image/x-icon">
+</head>
+
+<body>
+  
+  <!-- the left header information - all the buttons etc. -->
+  <header class="left-header">
+    <nav>
+        <li><a href="#main-page" onclick="showContent('main-page')"><img src="homeButton.png" alt="Main"></a></li>
+    </nav>
+    <nav>
+        <li><a href="#about-me" onclick="showContent('about-me')"><img src="aboutButton.png" alt="About Me"></a></li>
+    </nav>
+    <nav>
+          <li><a href="#explore" onclick="showContent('explore-page')"><img src="exploreButton.png" alt="Explore"></a></li>
+    </nav>
+    <nav>
+          <li><a href="#question" onclick="showContent('question')"><img src="questionButton.png" alt="???"></a></li>
+    </nav>  
+       <div id="sign-up-image" class="sign-up">
+         <nav>
+            <li><a href="#sign-up" onclick="showContent('sign-up')"><img src="signup.png" alt="Sign Up"></a></li>
+         </nav>
+      </div>
+  </header>
+
+  <!-- the left header information - all the buttons etc. -->
+  <header class="top-header">
+    <nav>
+      <li><a href="#poet-page" onclick="showContent('poetry-page')"><img src="poetry.png" alt="Poetry"></a></li>
+    </nav>
+    <nav>
+      <li><a href="#music-page" onclick="showContent('music-page')"><img src="music.png" alt="Music"></a></li>
+    </nav>
+    <nav>
+      <li><a href="#art-page" onclick="showContent('art-page')"><img src="artist.png" alt="Art"></a></li>
+    </nav>
+    <nav>
+      <li><a href="#pic-page" onclick="showContent('pic-page')"><img src="picture.png" alt="Pic"></a></li>
+    </nav>
+  </header>
+
+
+
+  <audio id="backgroundMusic" autoplay loop volume="0.3">
+    <source src="path/to/your-background-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section id="artist">
+      <div class="container">
+        <img src="buttonstring.png" alt="image" class="image-medium2">
+        <img src="artist.png" alt="image" class="image-small">
+  
+        <!-- Move the carousel buttons outside the carousel container -->
+        <div class="carousel-container">
+            <img src="leftright.png" alt="left button" class="carousel-button" onclick="changeSlide(-1)">
+          <div class="carousel-wrapper">
+            <div class="carousel">
+              <img src="eggGirl.png" alt="slide 1" class="carousel-image" data-slide="0">
+              <img src="waitGirl.png" alt="slide 2" class="carousel-image" data-slide="1">
+              <img src="birdWindow.png" alt="slide 3" class="carousel-image" data-slide="2">
+              <img src="leftright.png" alt="right button" class="carousel-button" onclick="changeSlide(1)">
+            </div>
+        </div>
+        </div>
+        <img src="girlwingtitle.png" alt="image" class="image-small">
+        <img src="des.png" alt="image" class="image-smaller">
+        <img src="des.png" alt="image" class="image-smaller2">
+      </div>
+    </section>
+
+    <section id="about-me">
+      <div class="container">
+        <img src="buttonstring.png" alt="image" class="image-medium">
+        <img src="titling.png" alt="image" class="image-small">
+        <div class="card-container">
+          <div class="card">
+            <!-- Your first tarot card image here -->
+            <img src="moontarot.jpg" alt="Tarot Card 1">
+          </div>
+          <div class="card">
+            <!-- Your second tarot card image here -->
+            <img src="deathtarot.jpg" alt="Tarot Card 2">
+          </div>
+          <div class="card">
+            <!-- Your third tarot card image here -->
+            <img src="suntarot.jpg" alt="Tarot Card 3">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <section id="explore-page">
+      <div class="container"> 
+        <img src="buttonstring.png" alt="image" class="image-medium">
+        <div class="explore-buttons">
+          <a href="#artist" onclick="showContent('artist')"><img src="artist.png" alt="artist"></a>
+          <a href="#music" onclick="showContent('music')"><img src="music.png" alt="music"></a>
+        </div>
+        <div class="explore-buttons">
+          <a href="#photo" onclick="showContent('photo')"><img src="picture.png" alt="picture"></a>
+          <a href="#poetry" onclick="showContent('poetry')"><img src="poetry.png" alt="poetry"></a>
+        </div>
+      </div>  
+    </section>
+
+  <section id="music-page">
+    <div class="container">
+      <img src="buttonstring.png" alt="image" class="image-medium">
+      <img src="music.png" alt="image" class="image-small">
+    </div>
+    
+  <div class="audio-box">
+    <img src="bluemoon.jpg" alt="Image" class="image-bluemo">
+    <p>taking a toll</p>
+    <audio controls>
+      <source src="taking a toll 2.m4a" type="audio/mpeg">
+    </audio>
+    <p>the journey</p>
+    <audio controls>
+      <source src="The Journey.m4a" type="audio/mpeg">
+    </audio>
+  </div> 
+  <div class="audio-box">
+    <img src="thoughts.jpg" alt="Image" class="image-bluemo">
+    <audio controls>
+      <source src="The Journey.m4a" type="audio/mpeg">
+    </audio>
+
+
+  </section>
+    </main>
+
+  <footer>
+  </footer>
+
+
+  <script>
+    let currentSlide = 0;
+    const carouselImages = document.querySelectorAll('.carousel-image');
+  
+    function changeSlide(index) {
+      // Hide the current slide
+      carouselImages[currentSlide].style.display = 'none';
+  
+      // Calculate the next slide
+      currentSlide = (currentSlide + index + carouselImages.length) % carouselImages.length;
+  
+      // Show the new slide
+      carouselImages[currentSlide].style.display = 'block';
+    }
+
+  function showContent(sectionId) {
+    // Get all section elements
+    const sections = document.querySelectorAll('main section');
+
+    // Hide all sections
+    sections.forEach(section => {
+      section.style.display = 'none';
+    });
+
+    // Show the selected section
+    const selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+      selectedSection.style.display = 'block';
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Show the main-page section on initial load
+    showContent('main-page');
+  });
+</script>
+
+
+
+
+</body>
+</html>

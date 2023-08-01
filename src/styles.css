@@ -1,0 +1,413 @@
+body {
+    font-family: 'sunshiney';
+    margin: 0;
+    padding: 0;
+    background-image: url("backing.png");
+    background-size: 1745px;
+  }
+  
+  
+  .top-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 130px;
+    background-image: url("header.png");
+    background-size: 100%; /* Adjust this value to control how the background image is displayed */
+    background-repeat: no-repeat;
+    color: #d9c3b000;
+    padding: 5px;
+    margin-top: px;
+    margin-left: 200px;
+    display: flex;
+    z-index: 10;
+    opacity: 0.9;
+  }
+
+/* Styles for the navigation links (buttons) in the top header */
+header.top-header nav a {
+  margin-top: -50px; /* Adjust this value to move the buttons down */
+  margin-left: 50px; /* Adjust this value to move the buttons to the right */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+header.top-header li {
+  margin-left: 10px;
+}
+
+/* Apply specific styles to individual navigation links (buttons) */
+header.top-header nav:nth-child(1) {
+  /* Move the first navigation link to the left */
+  margin-left: 80px;
+  margin-top: -7px;
+}
+
+header.top-header nav:nth-child(2) {
+  /* Move the second navigation link to the right */
+  margin-right: -60px;
+  margin-left: -10px;
+  margin-top: -7px;
+}
+
+header.top-header nav:nth-child(3) {
+  /* Move the third navigation link to the right */
+  margin-right: -30px;
+  margin-top: -10px;
+  /* size change */
+  width: 10px;
+}
+
+header.top-header nav:nth-child(4) {
+  /* Move the fourth navigation link to the right */
+  margin-right: 20px;
+  margin-top: -12px;
+}
+
+/* Styles for the new vertical left header */
+header.left-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px; /* Adjust the width as needed */
+  height: 100vh; /* Set the height of the left header to full viewport height */
+  background-image: url("side.png");
+  background-size: 100%; /* Adjust this value to control how the background image is displayed */
+  color: #33333300; /* Set your desired text color */
+  padding: 0px 0px;
+  z-index: 11; /* Set a higher z-index than the main header to overlay it */
+  display: flex; /* Use Flexbox to arrange items vertically */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally within the header */
+}
+
+/* Styles for the navigation links (buttons) in the left header */
+header.left-header nav {
+  margin-bottom: -250px; /* Adjust the spacing between each button (nav element) */
+}
+
+header.left-header li {
+  margin-bottom: 0px;
+}
+
+header.left-header a {
+  display: block; /* Make the links (buttons) fill the entire width of the nav element */
+  text-decoration: none;
+  color: #333; /* Set your desired link color */
+  padding: 0px;
+  margin-top: 130px;
+}
+
+/* Represents the button images in the left header */
+header.left-header nav img {
+  width: 150px; /* Adjust the width of each button in the left header */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 18px;
+}
+
+.sign-up {
+margin-top: 30px;
+}
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: -150px;
+  }
+  
+  /* the 'artistry collection' image */
+  .image-small {
+    width: 400px; /* Adjust this value for the smaller image width */
+    height: auto; /* This keeps the aspect ratio */
+    margin-bottom: 0px;
+    margin-left: 100px;
+  }
+  
+    /* the 'artistry collection' image */
+    .image-bluemo {
+      width: 400px; /* Adjust this value for the smaller image width */
+      height: auto; /* This keeps the aspect ratio */
+      margin-bottom: 0px;
+      margin-left: 0px;
+    }
+
+    /* the 'title' image */
+    .image-small2 {
+        width: 400px; /* Adjust this value for the smaller image width */
+        height: auto; /* This keeps the aspect ratio */
+        margin-bottom: 10px;
+        margin-top: -25px;
+        margin-right: 20px;
+      }
+  
+        
+    /* the 'title' image */
+    .image-smaller {
+        width: 400px; /* Adjust this value for the smaller image width */
+        height: auto; /* This keeps the aspect ratio */
+        margin-bottom: 10px;
+        margin-top: 40px;
+        margin-right: 14px;
+      }
+      
+        /* the 'title' image */
+        .image-smaller2 {
+            width: 400px; /* Adjust this value for the smaller image width */
+            height: auto; /* This keeps the aspect ratio */
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-right: 15px;
+          }
+
+  /* the button images */
+  .image-medium {
+    width: 900px; /* Adjust this value for the larger image width */
+    height: auto; /* This keeps the aspect ratio */
+    margin-bottom: 10px;
+    margin-left: 100px;
+  }
+
+    /* the button images for 'artist' */
+    .image-medium2 {
+      width: 900px; /* Adjust this value for the larger image width */
+      height: auto; /* This keeps the aspect ratio */
+      margin-bottom: 10px;
+      margin-left: -20px;
+    }
+  
+  /* navigation bar container */
+  nav {
+    padding: 10px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* unordered list that contain the navigation bar buttons */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+ /* each list item represents a navigation item */
+nav li {
+    margin: 0 5px;
+}
+  
+  /* anchor represents a clickable link, wrapped around the img tag */
+  nav a {
+    display: block;
+    text-align: space-between;
+    justify-content: center;
+    padding: 0px;
+    display: inline-block;
+    pointer-events: bounding-box;
+  }
+
+  /* represents the button images */
+  nav img {
+    width: 170px;
+    height: 100%;
+    display: center;
+    margin: 10px;
+    margin-bottom: 65px;
+    padding: 10px;
+  }
+
+
+  /* Position the buttons at the bottom left corner */
+#sign-up-button, #account-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add hover styles for buttons */
+#sign-up-button:hover, #account-button:hover {
+  background-color: #2980b9;
+}
+
+
+  main {
+    max-width: 1000px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 250px;
+    padding: 10px;
+    padding-left: 250px;
+    padding-right: 300px;
+  }
+  
+  section {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .carousel-container {
+    margin-top: 20px;
+    /* Set the position relative to enable absolute positioning of the buttons */
+    position: relative;
+    /* Add 'overflow: hidden;' to hide overflow and ensure stacking */
+    display: flex;
+    justify-content: center;
+    /* Adjust the top padding to move the carousel down */
+    padding-top: 300px;
+    margin-left: -2%;
+  }
+  
+
+  .carousel-button {
+    width: 65px; /* Adjust the button width as needed */
+    height: 60px; /* Adjust the button height as needed */
+    cursor: pointer;
+    margin: 0 300px; /* Adjust this value to increase the distance between buttons */
+  }
+
+
+  .carousel-stack {
+    /* Set the position relative for absolute positioning of the images */
+    position: relative;
+    /* Add 'display: flex;' and 'justify-content: center;' for horizontal centering of images */
+    display: flex;
+    justify-content: left;
+  }
+  
+  .carousel-image {
+    /* Hide all images initially except the first one (slide 0) */
+    display: none;
+    position: absolute;
+    top: 50%; /* Adjust this value to center vertically */
+    left: 50.5%; /* Adjust this value to center horizontally */
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Show only the first image initially (slide 0) */
+  .carousel-stack .carousel-image[data-slide="0"],
+  .carousel-stack .initial-slide {
+    display: block;
+  }
+
+
+  /* Styles for the tarot card container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adjust the gap between cards as needed */
+  margin-top: 23px; /* Adjust the top margin as needed */
+  margin-left: 120px;
+  position: relative;
+}
+
+/* Styles for individual tarot cards */
+.card {
+  width: 250px; /* Adjust the card width as needed */
+  height: 400px; /* Adjust the card height as needed */
+  transition: transform 0.3s ease-in-out; /* Add a transition for smooth animation */
+}
+
+/* Enlarge the selected card */
+.card:hover img {
+  width: 270px; /* Adjust the card width on hover as needed */
+  height: 420px; /* Adjust the card height on hover as needed */
+  transform-origin: center;
+  z-index: 1;
+}
+
+/* Styles for the tarot card images inside the cards */
+.card img {
+  width: 100%; /* Make the image fill the card container */
+  height: 100%; /* Make the image fill the card container */
+  object-fit: cover; /* Prevent image distortion */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to a new line if they don't fit in the container's width */
+  justify-content: center; /* Center the items horizontally */
+}
+
+.explore-buttons {
+  flex-basis: 0%; /* Set the initial width of each group to 50% */
+  display: flex; /* Use flexbox to align the images horizontally within each group */
+  flex-wrap: wrap; /* Allow items within each group to wrap to a new line */
+  margin-left: 150px;
+}
+
+.explore-buttons a {
+  flex-basis: 50%; /* Set the initial width of each item within a group to 50% */
+}
+
+.explore-buttons img {
+  width: 80%; /* Set the width of each image to 100% of its container */
+  height: auto; /* Maintain the aspect ratio of the images */
+  margin: 0px; /* Add some spacing between the images */
+}
+
+.audio-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px; /* Adjust the width as needed */
+  background-color: #8a8a8a00;
+  color: rgb(245, 237, 237);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+
+.audio-box img {
+  width: 300px; /* Adjust the image width as needed */
+  height: 300px; /* Adjust the image height as needed */
+  border-radius: 8px;
+}
+
+.audio-box audio {
+  width: 800px;
+}
+
+Regenerate
+  h2 {
+    color: #262626;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-image: url("footer.png");
+    background-size: 100%;
+    opacity: 0.9;
+  
+    /* Keep the original padding for the image height */
+    padding: 10px;
+  
+    /* Adjust the height for the footer container to fit the image and text */
+    height: 70px;
+    z-index: 10;
+  }
